@@ -59,7 +59,7 @@
 	> Utilizando o GitHub
 		> Criar uma conta no github.com
 		> Criar um projeto no github.com
-	> Definir um repositorio
+	> Definir um repositorio no GitHub
 		> echo "# 0001_tutorial_github" > README.md (Criar arquivo de readne.md)
 		> Criar pasta com o mesmo nome do projeto(0001_tutorial_github)
 		> git init (Iniciar projeto no Git)
@@ -67,6 +67,11 @@
 		> git commit -m "Criação do arquivo readme.md" (Criar ponto de contro de versão)
 		> git remote add origin https://github.com/anderrodrigo1/0001_tutorial_github.git (Link repositorio remoto ao projeto)
 		> git push -u origin master (Sincroniza os repositorios local e remoto)
+		> git add GitHub - Principais comantos.txt (Adicionando o arquivo GitHub - Principais comandos)
+		> git commit -m "Adicionando o arquivo GitHub - Principais comandos" (Crio ponto de contro da versão)
+		> git push -u origin master (Sincroniza os repositorios local e remoto)
+		> git config credential.helper store (Grava credencias para esse projeto local - para global --global)
+		> 
 		
 		
 		
