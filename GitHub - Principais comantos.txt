@@ -1,0 +1,98 @@
+
+> Comandos:
+	> Adicionar projeto ao Git: 
+		> git init (Iniciar projeto no Git)
+		=> Cria o .git na pasta e inicializa o manitoramento do projeto
+	> Cria usuário: 
+		> Local (PC puclico)
+			> git config user.name "Anderson"
+			> git config user.email "anderrodrigo@gmail.com"
+		> Global (PC pessoal)
+			> git config --global user.name "Anderson"
+			> git config --global user.email "anderrodrigo@gmail.com"
+	> Verificar status do projeto: git status
+	> Adicionar arquivo no monitoramento do Git: 
+		> git add nome_do_arquivo (para adicionar todos utilizar um "." no lugar do nome do arquivo)
+	> Cria ponto de controle do projeto: 
+		> git commit -m "Meu primeiro comite" ( O "-m" é o paramentro para passar uma mensagem)
+	> Verificar os log das alterações: 
+		> git log (motrar todos os log de alterações)
+		> git log -10 (Mostra os ultimos N(=10) logs)
+		> git log --oneline (Agrupa evento em uma unica linha)
+		> git log --before="2021-04-02" (Procura eventos anterios a data especificada)
+		> git log --after="2021-04-02" (Procura eventos após a data especificada)
+		> git log --since="10 day ago" (Procura eventos que ocorreram até 10 dias atrás)
+		> git log --author="ander" (Procura por autor)
+	> Navegando nos pontos de controle
+		> git checkout numero_hash_desejado (Vai para a versão solicitada)
+		> git checkout master (Vai para a a versão mais atual)
+	> Manipulando os arquvios
+		> Renomear arquivos: git mv programa.html programa3.html
+		> Removendo arquivos: git rm maisum.txt
+	> Comparando as versões: 
+		> git diff --staged (Compara versão atual com o que esta em alterção)
+		> git diff hash_do_ponto_de_contro (Compara versão atual com hash escolhido)
+		> git diff hash_inicial..Hash_final (Compara versões escolhidas inicial ".." final)
+	> Ajustando versão
+		> git commit --amend -m "Adicionando uma nova linha" (Alterar mensagem do commit)
+		> git restore --staged .\programa6.html	(desfaz o ultimo estado do arquivo)
+		> git checkout programa3.html(Volta versão do arquivo do ultimo ponto de controle)
+		> git reset HEAR --hard (Volta todos os arquivos para o ultimo ponto de controle)
+		> git reset HEAR^ --hard (Volta todos os arquivos para o penultimo ponto de controle)
+	> Estruturas de ramos(Branch)
+		> git branch (Saber em que branch você esta trabalhando)
+		> git branch func_teste (Cria um novo ramo de trabalho)
+		> git branch checkout func_teste (Alterar Branch)
+		> git branch -d func_teste (Apaga a branch, "-D" maiusculo força apagar)
+		> git merge func_teste (Adiciona no final da branch master a func_teste)
+		> git checkout -b func_teste3 (Criar novo branch já mudando para ele)
+		> git rebase func_teste2 (Adiciona no ponto de criação da branch master a func_teste e atualiza mundanças feitas posteriormente)
+		> git clone ..\02-secao04\ . (Faz uma copia do repositorio indicado)
+		> git fetch (Carrega novas atualizações de branch original, mas não faz merge)
+		> git rebase (Aplica mudanças carragadas do branch original)
+		> git pull (Carrega e Aplica as mudanças em um passo, fetch+rebase)
+		> git init --bare (Cria repositorio bare)
+		> git push (Aplica mudanças do repositorio clone no master original)
+		> git tag v1.0 (Cria um marcador de versão, usado para fazer entregaveis - Tag não pode sofrer commit)
+		> git tag (Mostra tag do projeto)
+		> git push origin v1.0 (Publica no repositorio remoto)
+	> Utilizando o GitHub
+		> Criar uma conta no github.com
+		> Criar um projeto no github.com
+	> Definir um repositorio
+		> echo "# 0001_tutorial_github" > README.md (Criar arquivo de readne.md)
+		> Criar pasta com o mesmo nome do projeto(0001_tutorial_github)
+		> git init (Iniciar projeto no Git)
+		> git add README.md (Adiciona arquivo no projeto para versionamento)
+		> git commit -m "Criação do arquivo readme.md" (Criar ponto de contro de versão)
+		> git remote add origin https://github.com/anderrodrigo1/0001_tutorial_github.git (Link repositorio remoto ao projeto)
+		> git push -u origin master (Sincroniza os repositorios local e remoto)
+		
+		
+		
+		
+		
+		
+		
+	
+
+		
+		
+		
+		
+	
+	
+	
+	
+		
+> Estrutura de arquivos de controle:
+	> .git(Pasta) => Pasta com todos os arquivos de configuração
+	> .gitignore(Arquivo) => Arquivo que controla os item a serem ignorados(Pastas ou arquivos)
+
+
+
+
+
+		
+	
+	
