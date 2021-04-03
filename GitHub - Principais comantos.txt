@@ -71,22 +71,10 @@
 		> git commit -m "Adicionando o arquivo GitHub - Principais comandos" (Crio ponto de contro da versão)
 		> git push -u origin master (Sincroniza os repositorios local e remoto)
 		> git config credential.helper store (Grava credencias para esse projeto local - para global --global)
-		> 
-		
-		
-		
-		
-		
-		
-		
-	
+		> git revert <id do commit> (desfaz o ultimo commit mantendo o historico)
+		> git reset HEAD~3 (desfaz o numero de commits N(=3) solicitado sem manter historicos)
 
 		
-		
-		
-		
-	
-	
 	
 	
 		
